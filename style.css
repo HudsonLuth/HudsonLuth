@@ -14,6 +14,8 @@ body {
   padding: 20px;
   max-width: 800px;
   margin: auto;
+  background-image: url('https://www.transparenttextures.com/patterns/fabric-of-squares.png');
+  background-repeat: repeat;
 }
 
 /* Header styling */
@@ -56,7 +58,11 @@ header p {
 
 /* Section styling */
 section {
+  background: #ffffff; /* Soft clean white for card */
+  padding: 20px;
   margin-bottom: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 h2 {
@@ -70,19 +76,19 @@ ul li {
 }
 
 a {
-  color: #003566; /* Deeper blue for links */
+  color: #003566; /* Deep link blue */
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #001d3d; /* Even deeper on hover */
+  color: #001d3d; /* Deeper hover blue */
 }
 
 /* Footer styling */
 footer {
   text-align: center;
   font-size: 0.9em;
-  color: #5c677d; /* Muted blue-gray for footer */
+  color: #5c677d; /* Muted blue-gray */
   margin-top: 40px;
 }
