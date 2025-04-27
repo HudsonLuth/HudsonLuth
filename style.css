@@ -59,7 +59,7 @@ header p {
 /* Section styling */
 section {
   background: #ffffff; /* Soft clean white for card */
-  padding: 20px;
+  padding: 30px; /* [TWEAK]: Give more breathing room */
   margin-bottom: 40px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -91,4 +91,33 @@ footer {
   font-size: 0.9em;
   color: #5c677d; /* Muted blue-gray */
   margin-top: 40px;
+}
+
+/* General Image Styling */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Photo Grid Specific Styling */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.photo-grid img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.photo-grid img:hover {
+  transform: scale(1.05);
 }
