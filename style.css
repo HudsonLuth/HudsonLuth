@@ -63,3 +63,15 @@ footer {
   color: #aaa;
   margin-top: 40px;
 }
+
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
