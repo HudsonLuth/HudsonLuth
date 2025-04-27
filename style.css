@@ -21,12 +21,12 @@ body {
 /* Header styling */
 header {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px; /* [TIGHTEN]: Reduced from 40px */
 }
 
 header h1 {
   font-size: 2.5em;
-  margin-bottom: 10px;
+  margin-bottom: 8px; /* [TIGHTEN]: Slightly less */
 }
 
 header p {
@@ -36,15 +36,15 @@ header p {
 
 /* Profile Picture Styling */
 .profile-pic {
-  width: 150px;
-  height: 150px;
+  width: 180px; /* [INCREASED]: Was 150px */
+  height: 180px; /* [INCREASED]: Match width */
   object-fit: cover;
   border-radius: 50%;
-  margin-top: 20px;
+  margin-top: 10px; /* [REDUCED]: Was 20px */
   display: block;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15); /* [SOFTER] */
   opacity: 0;
   animation: fadeIn 1.2s ease-in forwards;
 }
@@ -59,7 +59,7 @@ header p {
 /* Section styling */
 section {
   background: #ffffff; /* Soft clean white for card */
-  padding: 30px; /* [TWEAK]: Give more breathing room */
+  padding: 30px;
   margin-bottom: 40px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
