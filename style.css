@@ -34,27 +34,6 @@ header p {
   color: #1b263b; /* Slightly lighter blue for subtitle */
 }
 
-/* Profile wrapper for background circle */
-.profile-wrapper {
-  position: relative;
-  width: 120px;
-  height: 120px;
-  margin: 20px auto;
-}
-
-.profile-wrapper::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 120px;
-  height: 120px;
-  background: #f0e9e0;
-  border-radius: 50%;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-  z-index: 0;
-  transition: transform 0.3s ease;
-}
 
 /* Pulse on hover */
 .profile-wrapper:hover::before {
