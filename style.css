@@ -1,4 +1,4 @@
-/* Reset some basics */
+/* Reset basics */
 body, h1, h2, p, ul, li {
   margin: 0;
   padding: 0;
@@ -21,30 +21,50 @@ body {
 /* Header styling */
 header {
   text-align: center;
-  margin-bottom: 30px; /* [TIGHTEN]: Reduced from 40px */
+  margin-bottom: 30px;
 }
 
 header h1 {
   font-size: 2.5em;
-  margin-bottom: 8px; /* [TIGHTEN]: Slightly less */
+  margin-bottom: 8px;
 }
 
 header p {
   font-size: 1.2em;
-  color: #1b263b; /* Slightly lighter blue for subtitle */
+  color: #1b263b;
 }
 
-/* Profile Picture Styling */
+/* Profile Circle and Pic Styling */
+.profile-wrapper {
+  position: relative;
+  width: 200px; /* Adjust as needed */
+  height: 200px;
+  margin: 20px auto;
+}
+
+.profile-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f0e9e0; /* Off-white circle */
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  z-index: 0;
+}
+
 .profile-pic {
-  width: 180px; /* [INCREASED]: Was 150px */
-  height: 180px; /* [INCREASED]: Match width */
+  width: 180px;
+  height: 180px;
   object-fit: cover;
   border-radius: 50%;
-  margin-top: 10px; /* [REDUCED]: Was 20px */
+  position: relative;
+  z-index: 1;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15); /* [SOFTER] */
+  margin: auto;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
   opacity: 0;
   animation: fadeIn 1.2s ease-in forwards;
 }
@@ -58,17 +78,23 @@ header p {
 
 /* Section styling */
 section {
-  background: #ffffff; /* Soft clean white for card */
+  background: #f9f5f0; /* Softer off-white instead of pure white */
   padding: 30px;
   margin-bottom: 40px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 16px; /* Softer curves */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); /* Deeper shadow for modern card feel */
+  transition: box-shadow 0.3s ease;
 }
 
+section:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+/* Typography and links */
 h2 {
   font-size: 1.5em;
   margin-bottom: 10px;
-  color: #0d1b2a; /* Match midnight blue */
+  color: #0d1b2a;
 }
 
 ul li {
@@ -76,20 +102,20 @@ ul li {
 }
 
 a {
-  color: #003566; /* Deep link blue */
+  color: #003566;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #001d3d; /* Deeper hover blue */
+  color: #001d3d;
 }
 
 /* Footer styling */
 footer {
   text-align: center;
   font-size: 0.9em;
-  color: #5c677d; /* Muted blue-gray */
+  color: #5c677d;
   margin-top: 40px;
 }
 
