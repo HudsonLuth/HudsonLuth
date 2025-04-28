@@ -1,60 +1,4 @@
-/* Reset basics */
-body, h1, h2, p, ul, li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-/* Body styling */
-body {
-  font-family: 'Futura', 'Helvetica Neue', sans-serif;
-  line-height: 1.6;
-  color: #0d1b2a; /* Rich midnight blue */
-  background: #fdf6ee; /* Creamy off-white */
-  padding: 20px;
-  max-width: 800px;
-  margin: auto;
-  background-image: url('https://www.transparenttextures.com/patterns/fabric-of-squares.png');
-  background-repeat: repeat;
-}
-
-/* Header styling */
-header {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-header h1 {
-  font-size: 2.5em;
-  margin-bottom: 8px;
-}
-
-header p {
-  font-size: 1.2em;
-  color: #1b263b;
-}
-
-/* Profile Circle and Pic Styling */
-.profile-wrapper {
-  position: relative;
-  width: 200px; /* Adjust as needed */
-  height: 200px;
-  margin: 20px auto;
-}
-
-.profile-wrapper::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #f0e9e0; /* Off-white circle */
-  border-radius: 50%;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-  z-index: 0;
-}
-
+/* Profile Picture Styling */
 .profile-pic {
   width: 180px;
   height: 180px;
@@ -64,86 +8,21 @@ header p {
   z-index: 1;
   display: block;
   margin: auto;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
   opacity: 0;
   animation: fadeIn 1.2s ease-in forwards;
 }
 
-/* Fade-in Animation */
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
-
-/* Section styling */
+/* Section Card Styling */
 section {
-  background: #f9f5f0; /* Softer off-white instead of pure white */
-  padding: 30px;
+  background: #fcf8f2; /* Deeper cream */
+  padding: 32px;
   margin-bottom: 40px;
-  border-radius: 16px; /* Softer curves */
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); /* Deeper shadow for modern card feel */
-  transition: box-shadow 0.3s ease;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 section:hover {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
-}
-
-/* Typography and links */
-h2 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-  color: #0d1b2a;
-}
-
-ul li {
-  margin-bottom: 10px;
-}
-
-a {
-  color: #003566;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: #001d3d;
-}
-
-/* Footer styling */
-footer {
-  text-align: center;
-  font-size: 0.9em;
-  color: #5c677d;
-  margin-top: 40px;
-}
-
-/* General Image Styling */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-/* Photo Grid Specific Styling */
-.photo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 20px 0;
-}
-
-.photo-grid img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-}
-
-.photo-grid img:hover {
-  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
 }
